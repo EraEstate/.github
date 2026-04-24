@@ -45,7 +45,7 @@ Hệ thống EraEstate được thiết kế dựa trên tiêu chuẩn Enterpris
 
 ### <img src="./assets/backend.svg" width="18" height="18" align="top" /> 2. Lớp Dịch Vụ Cốt Lõi (Core Backend Services)
 - **Công nghệ cốt lõi**: Java 21, Spring Boot 3.5.x, Spring Data JPA, Hibernate.
-- **Quản trị cơ sở dữ liệu**: MariaDB cho dữ liệu quan hệ, được thiết kế chuẩn hóa (Normalization) đồng thời tối ưu hóa các câu lệnh truy vấn phức tạp (JPQL/Native Queries) thông qua Indexing.
+- **Quản trị cơ sở dữ liệu**: PostgreSQL cho dữ liệu quan hệ, được thiết kế chuẩn hóa (Normalization) đồng thời tối ưu hóa các câu lệnh truy vấn phức tạp (JPQL/Native Queries) thông qua Indexing.
 - **Caching & Giảm Tải**: Triển khai Redis để lưu trữ in-memory cache cho các dữ liệu ít thay đổi (ví dụ: cấu hình hệ thống, danh sách tính năng).
 - **Rate Limiting**: Giới hạn số lượng request API với thuật toán Token Bucket (thông qua Bucket4j), giúp ngăn chặn các cuộc tấn công DDoS và Brute-force.
 - **Kiến trúc đồng bộ**: Xử lý logic nghiệp vụ chặt chẽ, từ quy trình duyệt tin, tự động hóa package expiration (SubscriptionScheduler), đến phân quyền đa cấp.
@@ -106,7 +106,7 @@ Nhằm tiếp cận khách hàng quốc tế, nền tảng hỗ trợ tự độ
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 ![Web3](https://img.shields.io/badge/Web3-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
